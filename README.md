@@ -9,10 +9,10 @@ Goal: Predict different chemical properties.
 
 
 ## Files explained
-### ./Raw_data/*.csv
+#### ./Raw_data/*.csv
 Right now only the file 'all_chem_with_ghs.csv' is available. It contains all chemicals from https://pubchem.ncbi.nlm.nih.gov/ with a CID < 1.000.000 and a GHS symbol.
 
-### Modify_data.py
+#### Modify_data.py
 Formats raw_data files into a usable format for the predicter classes.
 Has to be executed before the first call of any predicter to ensure the needed data is avaiable
 * creates a dict of all appearing units in the used smiles strings. `'C=O' -> {'C':12, '=': 13, 'O':14}`
@@ -20,12 +20,12 @@ Has to be executed before the first call of any predicter to ensure the needed d
 * formats ghs list into list of boleans: `[2,7] -> [0,1,0,0,0,0,1,0,0]`
 * saves formated data in the main folder as csv or pickle
 
-### ChemAI.py
+#### ChemAI.py
 `class ChemAI()`
 Parent Class of all following Predicters to reduce redundant code.
 Model build is strongly influenced by the type of data that is to be predicted. 
 
-### GHSPredicter.py
+#### GHSPredicter.py
 For non-chemists: There are 9 GHS symbols. They represent dangerous properties of chemical substances (See https://pubchem.ncbi.nlm.nih.gov/ghs/)
 `class GHSPredicter(ChemAI)`
 When executed, trains a model that predicts GHS symbols.
