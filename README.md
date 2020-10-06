@@ -1,5 +1,5 @@
 # ChemAI
-Predicts different chemical properties.
+Goal: Predict different chemical properties.
 
 ## Disclaimer
 * This is my first AI
@@ -9,9 +9,8 @@ Predicts different chemical properties.
 
 
 ## Files explained
-### csv
-Data to train the model. Raw data is found in the corresponding folder.
-Right now only the file 'all_chem_with_ghs.csv' is available. It contains all chemicals from https://pubchem.ncbi.nlm.nih.gov/ with a CID < 1_000_000 and a GHS symbol
+### ./Raw_data/*.csv
+Right now only the file 'all_chem_with_ghs.csv' is available. It contains all chemicals from https://pubchem.ncbi.nlm.nih.gov/ with a CID < 1.000.000 and a GHS symbol.
 
 ### Modify_data.py
 Formats raw_data files into a usable format for the predicter classes.
