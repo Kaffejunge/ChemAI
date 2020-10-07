@@ -119,7 +119,7 @@ class ChemDataModifier():
 
 
 if __name__ == '__main__':
-    # This list will expand with different Predicters
+    # These lists will expand with different Predicters
     list_to_load = [r'.\Raw_data\all_chem_with_ghs.csv']
     list_to_save = [r'.\Chem_data\ghs_with_int_smiles.csv']
 
